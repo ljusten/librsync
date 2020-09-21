@@ -19,6 +19,9 @@ NOT RELEASED YET
    data than requested an assert-fail on debug builds, and a log-warning for
    release builds. Make trace output a little less spammy about copy_cb()
    return values. (dbaarda, https://github.com/librsync/librsync/pull/206)
+   
+ * Fix bug in the hash table code that could cause a heap corruption when
+   building hash tables from signatures with only a few blocks.
 
 ## librsync 2.3.1
 
